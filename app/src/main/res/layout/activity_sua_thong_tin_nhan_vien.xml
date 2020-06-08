@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SuaThongTinNhanVien_Activity">
+
+    <EditText
+        android:layout_margin="8dp"
+        android:id="@+id/edtSuaTenNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên nhân viên" />
+
+    <EditText
+        android:id="@+id/edtSuaQueQuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSuaTenNV"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:hint="Quê quán" />
+
+    <EditText
+        android:id="@+id/edtSuaNamSinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSuaQueQuan"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:hint="Năm sinh"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtSuaSDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSuaNamSinh"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:hint="Số điện thoại"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/rdgSuaGioiTinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSuaSDT">
+        <RadioButton
+            android:id="@+id/rdbSuaNam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nam" />
+
+        <RadioButton
+            android:id="@+id/rdbSuaNu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nữ" />
+    </RadioGroup>
+    <ImageView
+        android:src="@drawable/logo"
+        android:id="@+id/imgSuaAvatar"
+        android:scaleType="fitXY"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/edtSuaSDT"
+        android:layout_toRightOf="@id/rdgSuaGioiTinh"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+    <ImageButton
+        android:id="@+id/imgSuaCamera"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edtSuaSDT"
+        android:scaleType="fitXY"
+        android:src="@drawable/camera"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <ImageButton
+        android:id="@+id/imgSuaFolder"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imgSuaCamera"
+        android:src="@drawable/folder"
+        android:scaleType="fitXY"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btnSuaNV"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/imgSuaAvatar"
+        android:text="Cập nhật"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnHuySua"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/imgSuaAvatar"
+        android:layout_toRightOf="@+id/btnSuaNV"
+        android:text="Hủy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

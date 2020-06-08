@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LichSuThanhToan_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:visibility="gone"
+        android:background="@drawable/timkiem"
+        android:padding="4dp"
+        android:weightSum="20"
+        android:id="@+id/LLTKDoanhThu"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:clickable="true"
+            android:textSize="16sp"
+            android:id="@+id/tvNgayDau"
+            android:hint="Chọn ngày"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="đến"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:clickable="true"
+            android:textSize="16sp"
+            android:id="@+id/tvNgaySau"
+            android:layout_weight="8"
+            android:hint="Chọn ngày"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnXemDT"
+            android:textAllCaps="false"
+            android:background="@drawable/item_banan_selector"
+            android:text="Xem"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <GridView
+
+        android:layout_weight="1"
+        android:id="@+id/grdLichSuTT"
+        android:layout_margin="8dp"
+        android:horizontalSpacing="16dp"
+        android:verticalSpacing="16dp"
+        android:scrollbars="none"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:layout_margin="8dp"
+        android:text="Tổng tiền thu: "
+        android:textStyle="bold"
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        android:id="@+id/tvTongTienThu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_margin="8dp"
+        android:text="Tiền nguyên liệu: "
+        android:textStyle="bold"
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        android:id="@+id/tvTienNguyenLieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_margin="8dp"
+        android:text="Tổng tiền lãi: "
+        android:textStyle="bold"
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        android:id="@+id/tvTongTienLai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

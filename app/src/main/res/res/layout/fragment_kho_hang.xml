@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".KhoHang_Fragment">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabPagerKhoHang"
+        android:background="#FFF"
+        app:tabTextColor="#000"
+        app:tabIndicatorColor="#FAE60A"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerKhoHang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

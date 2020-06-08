@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".view.ThanhToan_Activity">
+
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:id="@+id/tvDSMonGoi"
+        android:text="Món đã gọi"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="48dp"
+        android:layout_toRightOf="@+id/tvDSMonGoi"
+        android:id="@+id/tvSL"
+        android:text="Số lượng"
+        android:gravity="right"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:id="@+id/lvDSMonGoi"
+        android:layout_marginTop="8dp"
+        android:scrollbars="none"
+        android:layout_below="@+id/tvDSMonGoi"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/tvTongTien"
+        android:text="Tổng tiền: "
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_below="@+id/lvDSMonGoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvTienThanhToan"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/tvTongTien"
+        android:layout_below="@+id/lvDSMonGoi"
+        android:text="Số lượng"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnThanhToan"
+        android:text="Thanh Toán"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="24dp"
+        android:textAllCaps="false"
+        android:background="@drawable/item_nhanvien_selector"
+        android:layout_below="@+id/tvTongTien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnHuyThanhToan"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="24dp"
+        android:textAllCaps="false"
+        android:text="Hủy"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/item_nhanvien_selector"
+        android:layout_below="@+id/tvTongTien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

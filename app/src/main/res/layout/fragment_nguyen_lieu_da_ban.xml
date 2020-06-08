@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.NguyenLieuDaBan_Fragment">
+  <LinearLayout
+      android:id="@+id/LLTimKiem"
+      android:visibility="gone"
+      android:layout_marginBottom="4dp"
+      android:background="@drawable/timkiem"
+      android:padding="4dp"
+      android:weightSum="20"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <TextView
+        android:textSize="16sp"
+        android:id="@+id/tvNgayDau"
+        android:hint="Chọn ngày"
+        android:layout_weight="8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:clickable="true"
+        android:text="đến"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:clickable="true"
+        android:textSize="16sp"
+        android:id="@+id/tvNgaySau"
+        android:layout_weight="8"
+        android:hint="Chọn ngày"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnXem"
+        android:textAllCaps="false"
+        android:background="@drawable/item_banan_selector"
+        android:text="Xem"
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+  </LinearLayout>
+  <ListView
+      android:id="@+id/lvNLDaBan"
+      android:scrollbars="none"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+</LinearLayout>

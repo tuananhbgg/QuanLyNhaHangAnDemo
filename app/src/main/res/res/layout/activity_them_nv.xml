@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThemNV_Activity">
+
+    <EditText
+        android:layout_margin="8dp"
+        android:id="@+id/edtTenNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên nhân viên" />
+
+    <EditText
+        android:id="@+id/edtQueQuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTenNV"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:hint="Quê quán" />
+
+    <EditText
+        android:id="@+id/edtNamSinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtQueQuan"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:hint="Năm sinh"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtSDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNamSinh"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:hint="Số điện thoại"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/rdgGioiTinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSDT">
+        <RadioButton
+            android:id="@+id/rdbNam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nam" />
+
+        <RadioButton
+            android:id="@+id/rdbNu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nữ" />
+    </RadioGroup>
+    <ImageView
+        android:src="@drawable/logo"
+        android:id="@+id/imgAvatar"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/edtSDT"
+        android:layout_toRightOf="@id/rdgGioiTinh"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+    <ImageButton
+        android:id="@+id/imgCamera"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edtSDT"
+        android:scaleType="fitXY"
+        android:src="@drawable/camera"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <ImageButton
+        android:id="@+id/imgFolder"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imgCamera"
+        android:src="@drawable/folder"
+        android:scaleType="fitXY"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btnThemNV"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/imgAvatar"
+        android:text="Thêm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnHuy"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/imgAvatar"
+        android:layout_toRightOf="@+id/btnThemNV"
+        android:text="Hủy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

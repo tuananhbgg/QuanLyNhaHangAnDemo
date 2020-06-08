@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/item_nhanvien_selector"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:id="@+id/tvNgayTT"
+        android:text="2020-12-06"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="2dp"
+        android:textSize="14sp"
+        android:id="@+id/tvSoBanTT"
+        android:gravity="center"
+        android:textColor="#000"
+        android:text="Bàn 14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:textSize="14sp"
+        android:id="@+id/tvTongGia"
+        android:gravity="center"
+        android:textColor="#000"
+        android:text="Tổng giá"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

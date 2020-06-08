@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_thucdon_selector"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/ln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="11">
+
+        <TextView
+            android:id="@+id/tvTenNLNhap"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="Cá chép"
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvSLNhap"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="SL:"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvGiaNhap"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="Giá:"
+            android:textColor="#000"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/tvnoiBQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ln"
+        android:layout_marginTop="2dp"
+        android:text="Bảo quản ở kho lạnh"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:layout_margin="4dp"
+        android:id="@+id/imgThemNL"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_them_nl" />
+
+</RelativeLayout>

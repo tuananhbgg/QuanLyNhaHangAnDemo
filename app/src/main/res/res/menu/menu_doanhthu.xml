@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mn_DoanhThuHomNay"
+        android:orderInCategory="100"
+        android:title="Doanh Thu Hôm Nay"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mn_DoanhThuNhieuNgay"
+        android:orderInCategory="100"
+        android:title="Doanh Thu Nhiều Ngày"
+        app:showAsAction="never" />
+</menu>

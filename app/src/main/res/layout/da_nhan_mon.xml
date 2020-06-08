@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<TextView
+    android:gravity="center"
+    android:textColor="#000"
+    android:text="Danh sách bàn đang chờ món"
+    android:textSize="18sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    <GridView
+        android:layout_marginTop="8dp"
+        android:id="@+id/grdBanChuaNhanMon"
+        android:layout_margin="8dp"
+        android:listSelector="@null"
+        android:horizontalSpacing="16dp"
+        android:verticalSpacing="16dp"
+        android:scrollbars="none"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

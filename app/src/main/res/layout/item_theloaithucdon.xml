@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@drawable/item_theloai_thucdon_selector"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginLeft="48dp"
+        android:scaleType="fitXY"
+        android:id="@+id/imgTheLoaiTD"
+        android:layout_width="32dp"
+        android:layout_height="32dp"/>
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:id="@+id/tvTenTheLoai"
+        android:textColor="#000"
+        android:text="Món ăn"
+        android:textSize="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

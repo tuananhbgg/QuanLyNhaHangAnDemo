@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="match_parent"
+    tools:context=".XemTTNhanVienFragment">
+
+    <TextView
+        android:id="@+id/tvXemTTNV"
+        android:text="Thông Tin Nhân Viên"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/tvXemTTNV"
+        android:src="@drawable/logo"
+        android:id="@+id/imgInfoAvatar"
+        android:scaleType="fitXY"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+    <TextView
+
+        android:layout_below="@+id/tvXemTTNV"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="16sp"
+        android:id="@+id/tvHT"
+        android:layout_toRightOf="@id/imgInfoAvatar"
+        android:text="Họ Tên: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_below="@+id/tvXemTTNV"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="2dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/tvInfoTenNV"
+        android:text="Chu Tuấn Anh"
+        android:layout_toRightOf="@+id/tvHT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvNS"
+        android:layout_below="@+id/tvHT"
+        android:layout_toRightOf="@+id/imgInfoAvatar"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="16sp"
+        android:text="Năm Sinh: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/tvInfoNamSinh"
+        android:text="1998"
+        android:layout_below="@+id/tvInfoTenNV"
+        android:layout_toRightOf="@+id/tvNS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="8dp"
+        android:text="Giới Tính: "
+        android:textSize="16sp"
+        android:id="@+id/tvGT"
+        android:layout_below="@+id/imgInfoAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvInfoGT"
+        android:text="Nam"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="4dp"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/tvGT"
+        android:layout_below="@+id/imgInfoAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="8dp"
+        android:text="Quê Quán: "
+        android:textSize="16sp"
+        android:id="@+id/tvQQ"
+        android:layout_below="@+id/tvGT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvInfoQQ"
+        android:text="Bắc Giang"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="4dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/tvQQ"
+        android:layout_below="@+id/tvInfoGT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="8dp"
+        android:text="Số Điện Thoại: "
+        android:textSize="16sp"
+        android:id="@+id/tvSDT"
+        android:layout_below="@+id/tvQQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvInfoSDT"
+        android:text="0343298627"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="4dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/tvSDT"
+        android:layout_below="@+id/tvInfoQQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

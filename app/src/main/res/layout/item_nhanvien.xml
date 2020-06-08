@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="4dp"
+    android:background="@drawable/item_nhanvien_selector"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvAnhNV"
+        android:layout_height="48dp"
+        android:layout_width="48dp"
+        app:cardCornerRadius="24dp">
+        <ImageView
+            android:id="@+id/imgAnhNV"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tvTenNV"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="18sp"
+        android:text="Chu Tuấn Anh"
+        android:layout_marginRight="32dp"
+        android:textColor="#000"
+        android:layout_toRightOf="@+id/cvAnhNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvQueQuan"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="32dp"
+        android:text="Bắc Giang"
+        android:layout_toRightOf="@+id/cvAnhNV"
+        android:layout_below="@+id/tvTenNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/next"
+        android:layout_width="32dp"
+        android:layout_height="32dp" />
+</RelativeLayout>
